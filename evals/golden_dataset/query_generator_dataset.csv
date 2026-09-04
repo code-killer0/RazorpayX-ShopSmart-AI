@@ -1,0 +1,5 @@
+category,brand,budget,rating,expected_keys,expected_operators
+shoes,Nike,no limit,no minimum,"[""categories"", ""brand""]","{""categories"": ""$regex"", ""brand"": ""$regex""}"
+laptop,any,50000,4,"[""categories""]","{""categories"": ""$regex""}"
+headphones,Sony,3000,no minimum,"[""categories"", ""brand""]","{""categories"": ""$regex"", ""brand"": ""$regex""}"
+phone,any,no limit,no minimum,"[""categories""]","{""categories"": ""$regex""}"

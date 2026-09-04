@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "mongodb-mcp-server": "^2.1.0"
+  },
+  "overrides": {
+    "openid-client": "5.7.1"
+  }
+}

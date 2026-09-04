@@ -1,0 +1,6 @@
+input,expected_answer_keywords,context
+What is the price of Swanson capsules?,"[""price"", ""Swanson""]",User asking about specific product pricing
+Is the Nike Air Max available?,"[""Nike"", ""Air Max"", ""available""]",User asking about product availability
+What are the best rated shoes?,"[""rating"", ""shoes""]",User asking about top-rated products
+Tell me about Samsung Galaxy phones,"[""Samsung"", ""Galaxy""]",User wants product details
+How much does the JBL speaker cost?,"[""JBL"", ""price"", ""cost""]",User asking about pricing

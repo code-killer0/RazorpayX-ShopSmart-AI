@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopSmart AI — Product Shopping Chatbot</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar for Thread History -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <div class="rzp-logo-badge">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="#38bdf8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M2 17L12 22L22 17" stroke="#38bdf8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M2 12L12 17L22 12" stroke="#38bdf8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="brand-text">
+                        <span class="brand-name">Razorpay<span class="rzp-x">X</span></span>
+                        <span class="brand-sub">ShopSmart AI</span>
+                    </div>
+                </div>
+            </div>
+            <div class="thread-list-container">
+                <div class="section-title">Conversations</div>
+                <ul class="thread-list" id="thread-list">
+                    <!-- Dynamic threads inserted here -->
+                </ul>
+            </div>
+            <button class="new-chat-btn" id="new-chat-btn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+                New Session
+            </button>
+        </aside>
+
+        <!-- Main Chat Area -->
+        <main class="chat-area">
+            <header class="chat-header">
+                <div class="header-info">
+                    <h1>ShopSmart AI Assistant</h1>
+                    <p class="status">
+                        <span class="status-dot"></span>  Razorpay Secured Gateway
+                    </p>
+                </div>
+                <div class="header-actions">
+                    <div class="rzp-trust-tag">
+                        <span> Razorpay Verified</span>
+                    </div>
+                    <button class="icon-btn" id="clear-chat-btn" title="Clear Chat">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="3 6 5 6 21 6"></polyline>
+                            <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                        </svg>
+                    </button>
+                </div>
+            </header>
+
+            <!-- Message Area -->
+            <div class="messages-container" id="messages-container">
+                <!-- Welcome greeting -->
+                <div class="message assistant welcome">
+                    <div class="avatar">AI</div>
+                    <div class="message-content">
+                        <p>Hi there! I am your <strong>ShopSmart AI</strong> personal shopping assistant powered by <strong>RazorpayX Payments</strong>.</p>
+                        <p>I can help you search items in our database, recommend products based on ratings or budget, and process instant <strong>1-Click Razorpay Checkouts</strong>.</p>
+                        <p>What are you looking to buy today?</p>
+                        
+                        <div class="quick-prompts">
+                            <button class="quick-prompt-btn" data-query="Find shoes under 5000">👟 Shoes under ₹5000</button>
+                            <button class="quick-prompt-btn" data-query="Suggest some high rated laptops">💻 High-rated laptops</button>
+                            <button class="quick-prompt-btn" data-query="What is the price of Swanson capsules?">💊 Swanson capsules price?</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Input Area -->
+            <footer class="input-area">
+                <form class="input-form" id="input-form">
+                    <input type="text" id="chat-input" placeholder="Type your request (e.g., 'Find running shoes under 5000')..." required autocomplete="off">
+                    <button type="submit" class="send-btn" id="send-btn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="22" y1="2" x2="11" y2="13"></line>
+                            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                        </svg>
+                    </button>
+                </form>
+            </footer>
+        </main>
+    </div>
+
+    <!-- Main JavaScript Logic -->
+    <script src="app.js?v=2"></script>
+</body>
+</html>

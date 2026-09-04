@@ -1,0 +1,34 @@
+# Core MCP library
+mcp
+
+# LangGraph and LangChain for Agentic workflows
+langgraph
+langchain-core
+langchain-community
+langchain-google-genai
+
+# Environment configuration
+python-dotenv
+
+# API server
+fastapi
+uvicorn
+
+# MongoDB checkpointer & fast-path driver
+langgraph-checkpoint-mongodb
+pymongo
+
+# Recommendation engine & data processing
+pandas
+numpy
+scikit-learn
+
+# Payment SDK
+razorpay
+
+# Evaluation framework & testing
+deepeval
+pytest
+pytest-asyncio
+requests
+pydantic

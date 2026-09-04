@@ -1,0 +1,16 @@
+input,expected_intent,context
+I want to buy running shoes,buy,User explicitly wants to purchase a product
+Find me a laptop under 50000,buy,User is looking to shop for a product with budget
+Suggest high rated headphones,buy,User wants recommendations
+budget 5000,buy,User specifying purchase details mid-flow
+Shoes under 5000,buy,User wants to find products to buy
+What is the price of Swanson capsules?,inquiry,User wants product information, not buying
+Is the Nike Air Max available in size 10?,inquiry,User asking about product availability
+Compare iPhone 15 and Samsung S24,inquiry,User wants product comparison
+What are the specs of the Dell XPS 15?,inquiry,User asking for product details
+I want to know about what is LLM,general,Not product-related at all
+"Hello, how are you?",general,"Greeting, not product-related"
+What is the weather today?,general,Unrelated to shopping
+Confirm successful checkout for order xyz,general,System checkout message — must be intercepted as general
+Payout failed for transaction abc,general,System payout failure message — must be intercepted as general
+Payment failed due to insufficient balance,general,System payment failure — must be intercepted as general

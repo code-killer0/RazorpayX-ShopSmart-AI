@@ -1,0 +1,21 @@
+# Environment Secrets (Set these in Render Dashboard -> Environment Variables)
+.env
+.env.*
+
+# Python Bytecode & Cache
+__pycache__/
+*.py[cod]
+
+# Virtual Environments (Render installs dependencies via requirements.txt)
+.venv/
+venv/
+env/
+
+# Node Modules (Render installs via npm install during build)
+node_modules/
+
+# Test & IDE Caches
+.pytest_cache/
+.vscode/
+.idea/
+.DS_Store

@@ -1,0 +1,6 @@
+test_name,pipeline,input,expected_intent,expected_category,expected_has_products,expected_response_keywords,description
+buy_shoes_full_pipeline,buy,I want to buy running shoes under 5000,buy,shoes,true,,Full buy pipeline: user gives category + budget in one shot
+buy_laptop_full_pipeline,buy,Find me a laptop,buy,laptop,true,,Buy pipeline with just category — info_gatherer should ask for more
+inquiry_price_check,inquiry,What is the price of Swanson capsules?,inquiry,,,"[""price"", ""Swanson""]",Inquiry pipeline: user asks about a specific product price
+general_question,general,What is machine learning?,general,,,,"General question — should be handled by polite_reject or inquiry_resolver"
+checkout_interception,general,Confirm successful checkout for order pout_abc123,general,,,,"System checkout message must not trigger buy flow"

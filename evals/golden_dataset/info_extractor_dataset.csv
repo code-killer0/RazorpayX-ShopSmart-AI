@@ -1,0 +1,9 @@
+input,history,expected
+I want to buy running shoes under 5000,,"{""brand"": null, ""budget"": 5000, ""rating"": null, ""category"": ""shoes"", ""has_enough_info"": true}"
+Nike laptop bag,,"{""brand"": ""Nike"", ""budget"": null, ""rating"": null, ""category"": ""laptop bag"", ""has_enough_info"": true}"
+budget 3000,"User: I want headphones
+Assistant: What is your budget and any brand preference?","{""brand"": null, ""budget"": 3000, ""rating"": null, ""category"": ""headphones"", ""has_enough_info"": true}"
+"Samsung, rating at least 4","User: Find me a phone
+Assistant: Do you have a brand preference or budget?","{""brand"": ""Samsung"", ""budget"": null, ""rating"": 4, ""category"": ""phone"", ""has_enough_info"": true}"
+something good,,"{""brand"": null, ""budget"": null, ""rating"": null, ""category"": null, ""has_enough_info"": false}"
+"I want Adidas shoes, budget 8000, rating above 4.5",,"{""brand"": ""Adidas"", ""budget"": 8000, ""rating"": 4.5, ""category"": ""shoes"", ""has_enough_info"": true}"
