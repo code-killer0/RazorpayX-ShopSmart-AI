@@ -11,7 +11,7 @@ api_key = os.getenv("GOOGLE_API_KEY")
 set_llm_cache(InMemoryCache())
 
 llm_lite = ChatGoogleGenerativeAI(
-    model="gemini-2.0-flash",
+    model="gemini-3.5-flash-lite",
     google_api_key=api_key,
     temperature=0,
     max_retries=2,
@@ -19,14 +19,14 @@ llm_lite = ChatGoogleGenerativeAI(
 )
 
 llm = ChatGoogleGenerativeAI(
-    model="gemini-2.0-flash",
+    model="gemini-3.6-flash",
     google_api_key=api_key,
     temperature=0,
     max_retries=2,
     request_timeout=10,
 )
 llm_pro = ChatGoogleGenerativeAI(
-    model="gemini-2.0-flash",
+    model="gemini-3.7-flash",
     google_api_key=api_key,
     temperature=0,
     max_retries=2,
